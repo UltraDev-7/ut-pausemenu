@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: 'Roboto Mono';
+    color: white;
+    overflow: hidden;
+}
+
+.root {
+    display: none;
+    perspective: 600px;
+}
+
+.main {
+    position: absolute;
+    top: -23vh;
+    left: 13vh;
+}
+
+.pausemenu {
+    width: 27vh;
+    position: absolute;
+    transition: 0.1s;
+    transform-style: flat;
+}
+
+::selection {
+    color: #30c98b;
+}
+
+.pausemenu-leftside {
+    float: left;
+}
+
+.leftside-triangle {
+    width: 0;
+    height: 0;
+    border-top: 1.5vh solid transparent;
+    border-right: 2.5vh solid #dcdcdc;
+    border-bottom: 1.5vh solid transparent;
+    position: relative;
+    top: 11.5vh;
+}
+
+.pausemenu-border {
+    float: left;
+    width: 0.5vh;
+    height: 28.5vh;
+    background-color: #dcdcdc;
+    box-shadow: 0px 0px 20px 0px #dcdcdc;
+    z-index: 5;
+}
+
+.pausemenu-rightside {
+    float: right;
+}
+
+.rightside-charactername {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: -2vh;
+}
+
+.characternameicon {
+    margin-right: 8px;
+    color: #30c98b;
+    text-shadow: 0 0 12px #30c98b;
+}
+
+.charactername {
+    font-weight: 500
+}
+
+.rightside-buttons {
+    width: 22.6vh;
+    height: 21vh;
+    z-index: 9;
+}
+
+.button {
+    position: relative;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #bbbbbb;
+    width: 100%;
+    height: 5vh;
+    margin-top: 1.4vh;
+    box-shadow: 0px 0px 20px 0px white;
+    border: 0.3vh solid #dcdcdc;
+    font-size: 2.4vh;
+    transition: 0.5s;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 20px 0px #30c98b;
+    border: 0.3vh solid #30c98b;
+    background-color: #30c98b;
+    background-image: var(--waves);
+    width: 105%;
+    font-size: 2.5vh;
+    transition: 0.5s;
+    z-index: 11;
+}
+
+.button-icon {
+    margin: 0px 1vh 0px 2vh;
+}
+
+.point {
+    position: relative;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #dcdcdc;
+    left: -20.5vh;
+    top: -36vh;
+    border-radius: 50%;
+}
+
+.line {
+    position: relative;
+    width: .1vh;
+    height: 19.5vh;
+    background: #919191;
+    left: -28vh;
+    top: -30vh;
+    transform: rotate(120deg);
+}
+
+.point2 {
+    position: relative;
+    width: 1.5vh;
+    height: 1.5vh;
+    background: #30c98b;
+    left: -37.5vh;
+    top: -47vh;
+    border-radius: 50%;
+}
+
+.info-header {
+    position: relative;
+    border-radius: 3.5px 3.5px 0px 0px;
+    background-color: #dcdcdc;
+    right: 55vh;
+    top: -58vh;
+    height: 2vh;
+    width: 16vh;
+}
+
+.info-header p {
+    color: #2f3130;
+    padding: 3px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info-title {
+    position: relative;
+    background-color: #47463f8d;
+    right: 55vh;
+    top: -58vh;
+    height: 2vh;
+    width: 16vh;
+    margin-top: -9px;
+}
+
+.info-title p {
+    color: rgb(25, 25, 25);
+    padding: 3px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
